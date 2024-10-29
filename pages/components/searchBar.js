@@ -14,7 +14,7 @@ export default function SearchBar() {
     setSelectedPlaylist(originalPlaylist.search(value));
   }
   return (
-    <div className="bg-gray-950 flex w-full  h-[6%] justify-between ">
+    <div className="bg-gray-950 flex w-full h-[6%] justify-between pl-8 pr-8 ">
       <div className="flex"> </div>
       {/* searchbar */}
       <div className="flex items-center justify-center w-full">

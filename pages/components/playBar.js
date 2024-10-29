@@ -63,7 +63,7 @@ export default function PlayBar() {
   // console.log("out", songIsSelected);
 
   return (
-    <div className="bg-gray-950 flex w-full h-[9%] justify-between">
+    <div className="bg-gray-950 flex w-full h-[9%] justify-center md:justify-between">
       <audio src={selectedSong.link} ref={audioRef} onTimeUpdate={(e)=>{ setCurrentTime(e.target.currentTime); setDuration(e.target.duration);}} onEnded={()=>{
         let temp = selectedPlaylist.nextSong(isShuffling, isLooping);
         if(temp != null){
@@ -75,7 +75,7 @@ export default function PlayBar() {
       }
         
       }></audio>
-      <div className="flex w-[30%] justify-left pl-8">
+      <div className="w-[30%] justify-left pl-8 hidden md:flex">
         <div className="flex h-full">
           <img src={selectedSong.imgAddress} alt="image" className=" w-full rounded-md m-1"></img>
         </div>
@@ -84,7 +84,7 @@ export default function PlayBar() {
           <div className="flex lato-bold text-gray-400">{selectedPlaylist.name}</div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center w-[30%]">
+      <div className="flex flex-col justify-center items-center w-full md:w-[30%]">
         <div className="flex  justify-center items-center">
           {/* shuffle */}
           <div className="flex mr-2 ml-2" onClick={() => {toggleIsShuffling();}}>
@@ -125,7 +125,7 @@ export default function PlayBar() {
             <LoopButton/>
           </div>
         </div>
-        <div className="flex-grow flex justify-between  items-center w-full">
+        <div className="flex-grow flex justify-between  items-center w-4/5">
           <div className="flex text-sm text-gray-400 m-1">
             <span>{formatTime(currentTime)}</span>
             {/* <span>{formatTime(duration)}</span> */}
@@ -145,7 +145,7 @@ export default function PlayBar() {
         </div>
         
       </div>
-      <div className="flex w-[30%] justify-end items-center pr-8"> 
+      <div className="hidden md:flex w-[30%] justify-end items-center pr-8"> 
         {
           currentTime && duration ? <div className="flex text-gray-400 text-l lato-bold">{formatTime(currentTime)} / {formatTime(duration)}</div> : "loading..."
         }

@@ -5,8 +5,8 @@ const PlaylistCard = ({image, name, length}) =>{
           <img src={image} alt="image" className="h-full w-full rounded-full overflow-hidden"></img>
         </div>
         <div className="flex flex-col">
-          <div className=" flex lato-bold text-xl">{name}</div>
-          <div className=" flex text-gray-400">{length} songs</div>
+          <div className=" flex lato-bold text-xs md:text-xl">{name}</div>
+          <div className=" flex text-gray-400 text-xs md:text-xl">{length} songs</div>
         </div>
       </div>
     )

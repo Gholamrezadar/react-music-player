@@ -17,9 +17,9 @@ export default function SongPanel() {
   return (
     <div className="bg-gray-950 flex flex-grow  h-full flex-col p-2">
       <div className="flex bg-gray-900 flex-col maryam-shadow">
-        <div className="flex bg-gray-900 justify-start items-center ml-12 mb-2 mt-2 ">
-          {/* play top */}
-          <div
+        <div className="flex bg-gray-900 justify-start items-center mb-2 mt-2 "> {/* ghd change */}
+          {/* play top */} {/* ghd change */}
+          {/* <div
             className="flex text-green-500 cursor-pointer"
             onClick={() => {
               setIsPlaying(true);
@@ -38,30 +38,30 @@ export default function SongPanel() {
                 d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
                 clip-rule="evenodd"
               />
-            </svg>
-          </div>
-          <div className="flex text-5xl p-5 lato-black">
+            </svg> 
+          </div> */}
+          <div className="flex p-5 lato-black text-xl md:text-5xl"> {/* ghd change */}
             {selectedPlaylist.name}
           </div>
           {/* <div className="flex text-5xl p-5 lato-black">MDAR Musics</div> */}
         </div>
-        <div className="flex bg-gray-900 mb-4">
-          <div className="flex bg-blue-100 bg-transparent w-[5%] justify-end pr-4 lato-bold text-2xl">
+        <div className="flex bg-gray-900 mb-4 text-sm">
+          <div className="flex bg-blue-100 bg-transparent w-[5%] justify-end pr-4 lato-bold">
             #
           </div>
-          <div className="flex bg-blue-900 bg-transparent w-[5%] lato-bold text-2xl">
+          <div className="flex bg-blue-900 bg-transparent w-[5%] lato-bold">
             Title
           </div>
           <div className="flex bg-blue-300 bg-transparent w-[30%]"></div>
-          <div className="flex bg-blue-500 bg-transparent w-[50%] lato-bold text-2xl">
+          <div className="flex bg-blue-500 bg-transparent w-[50%] lato-bold">
             Artist
           </div>
-          <div className="flex bg-blue-800 bg-transparent w-[10%] lato-bold text-2xl pl-14">
+          <div className="flex bg-blue-800 bg-transparent w-[10%] lato-bold pl-14">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="size-6"
+              className="size-6"
             >
               <path
                 fill-rule="evenodd"

@@ -39,7 +39,7 @@ export default function PlaylistPanel() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="size-6"
+              className="size-6"
             >
               <path d="M11.584 2.376a.75.75 0 0 1 .832 0l9 6a.75.75 0 1 1-.832 1.248L12 3.901 3.416 9.624a.75.75 0 0 1-.832-1.248l9-6Z" />
               <path
@@ -50,7 +50,7 @@ export default function PlaylistPanel() {
               <path d="M12 7.875a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" />
             </svg>
           </div>
-          <div className="bg-gray-900 flex text-3xl p-3 lato-bold">
+          <div className="bg-gray-900 flex text-sm md:text-3xl p-3 lato-bold">
             Playlists
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function PlaylistPanel() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="size-6"
+            className="size-6"
           >
             <path d="M6 3a3 3 0 0 0-3 3v2.25a3 3 0 0 0 3 3h2.25a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6ZM15.75 3a3 3 0 0 0-3 3v2.25a3 3 0 0 0 3 3H18a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3h-2.25ZM6 12.75a3 3 0 0 0-3 3V18a3 3 0 0 0 3 3h2.25a3 3 0 0 0 3-3v-2.25a3 3 0 0 0-3-3H6ZM17.625 13.5a.75.75 0 0 0-1.5 0v2.625H13.5a.75.75 0 0 0 0 1.5h2.625v2.625a.75.75 0 0 0 1.5 0v-2.625h2.625a.75.75 0 0 0 0-1.5h-2.625V13.5Z" />
           </svg>
@@ -127,7 +127,7 @@ export default function PlaylistPanel() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="size-6"
+                  className="size-6"
                 >
                   <path
                     fill-rule="evenodd"
